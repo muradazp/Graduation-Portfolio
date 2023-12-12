@@ -1,4 +1,12 @@
 Code covers all the required cases.
-- Milestone 1:  TODO
-- Milestone 2:  TODO
-- Milestone 3:  TODO
+- Milestone 1:  The ZooKeeper service is deployed and is accessible by the applications. 
+                The adapter logic has been written to go between the existing centralized 
+                Discovery and Kazoo client, and ability of this composite to communicate 
+                with ZooKeeper. Registration and de-registration of publisher/subscribers 
+                works with the single instance of centralized discovery.
+- Milestone 2:  Brokers run a leader election when they first join and in the event of any 
+                broker failure. All watch mechanisms work as specified, including informing 
+                publishers/subscribers of which node is the current primary broker. The 
+                viaBroker strategy now works using the primary broker as elected using ZooKeeper.
+- Milestone 3:  Both graceful and unexpected termination of publishers and subscribers are handled.
+                Subscribers/publishers can come and go at any time.
