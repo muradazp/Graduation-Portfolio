@@ -1,0 +1,11 @@
+2023-04-13 17:01:08,379 - kazoo.client - INFO - Connecting to 10.0.0.1(10.0.0.1):2181, use_ssl: False
+2023-04-13 17:01:08,382 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2023-04-13 17:01:08,394 - PubAppln - INFO - Broker app configured.
+2023-04-13 17:01:08,394 - PubAppln - INFO - Registering app with discovery service.
+2023-04-13 17:01:08,395 - PubAppln - INFO - Connecting to the lead discovery service.
+2023-04-13 17:01:08,395 - PubAppln - INFO - Connected to: tcp://10.0.0.2:5551
+2023-04-13 17:01:08,496 - PubAppln - INFO - Subscriber app registered.
+2023-04-13 17:01:08,496 - PubAppln - INFO - Broker app registered.
+2023-04-13 17:01:08,496 - PubAppln - INFO - Locating all registered publishers.
+2023-04-13 17:01:08,497 - PubAppln - INFO - Watching current pubs load to balance if needed...
+2023-04-13 17:01:09,000 - PubAppln - INFO - No publishers present. Waiting...

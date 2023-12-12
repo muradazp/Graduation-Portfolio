@@ -1,0 +1,212 @@
+// Course: CS6381 Distributed Systems Principles
+// Instructor: Aniruddha Gokhale
+// Created: Spring 2023
+//
+// Purpose:
+// Describe an initial schema for message exchange with the Discovery service.
+// The goal here is to show things in the simplest way using all strings. But 
+// in reality you will need to modify it to use enums and other ProtoBuf types 
+// that are supported and that will be needed here.
+
+// Let us use the Version 3 syntax
+syntax = "proto3";
+
+message ID {
+        int64 node_id = 1;
+        string name = 2;
+        string ip = 3;
+        string port = 4;     
+};
+
+// Define a message type that allows the apps to register with the discovery
+// service so that they can all see eachother.
+message RegisterReq
+{
+        enum Role {
+                PUBLISHER = 0;
+                SUBSCRIBER = 1;
+                BROKER = 2;
+                DHT_NODE = 3;
+        };
+        Role role = 1;
+        repeated string topiclist = 2;
+        ID id = 3;
+}
+
+// Define a message type that allows the apps to deregister with the discovery
+// service so that discovery doesn't have stale entries.
+message DeregisterReq
+{
+        enum Role {
+                PUBLISHER = 0;
+                SUBSCRIBER = 1;
+        };
+        Role role = 1;
+        repeated string topiclist = 2;
+        ID id = 3;
+}
+
+// Although the response will be a simple OK or an Exception, this is 
+// an enum field to indicate if it was success or failure, and if failure, 
+// a reason is given (in the form of string).
+message RegisterResp
+{
+        enum Result {
+                SUCCESS = 0;
+                FAILURE = 1;
+        }
+        message NeighborNodes {
+                string predecessor = 1;
+                string successor = 2;
+        }
+        Result result = 1;
+        string fail_reason = 2; 
+        NeighborNodes neighbor_nodes = 3;
+}
+
+// Although the response will be a simple OK or an Exception, this is 
+// an enum field to indicate if it was success or failure, and if failure, 
+// a reason is given (in the form of string).
+message DeregisterResp
+{
+        enum Result {
+                SUCCESS = 0;
+                FAILURE = 1;
+        }
+        message NeighborNodes {
+                string predecessor = 1;
+                string successor = 2;
+        }
+        Result result = 1;
+        string fail_reason = 2; 
+        NeighborNodes neighbor_nodes = 3;
+}
+
+// Defines a message type that allows one DHT node to ask another to
+// help find a location on the ring for a new node or topic hash
+message LocateReq
+{
+        message TopicInfo {
+                int64 topic_hash = 1;
+                ID app_id = 2;
+                string app_type = 3;
+        }
+        ID new_node = 1;
+        TopicInfo topic_info = 2;
+        int64 start_node_id = 3;
+}
+
+// Defines a message type that allows a DHT node to respond to 
+// another to help find a location on the ring for a new node
+message LocateResp
+{
+        message LocationInfo {
+                string predecessor = 1;
+                string successor = 2;
+        };
+        LocationInfo location_info = 1;
+        repeated ID publishers = 2;
+        bool success = 3;
+}
+
+// Defines a message type that allows one DHT node to tell another to
+// update its predecessor or successor node
+message UpdateReq
+{
+        ID new_node = 1;
+        string which_neighbor = 2;
+        int64 start_node_id = 3;
+}
+
+// Define a message type that pubs/subs send to the discovery service
+// to see if the system is ready and if they can proceed to pub/sub
+// Accordingly, there will be a req and resp message types.
+message IsReadyReq
+{
+        // we really don't need to send any info
+}
+
+// Response to the IsReady request
+message IsReadyResp
+{
+        bool reply = 1; // yes or no
+}
+
+// define more message types. For example, a subscriber middleware may want to 
+// know all the publishers that publish the topic that subscriber is interested 
+// in. In that case, a request will be a single topic or list of topics, and 
+// the response will be list of publishers with their name/IP/port for each 
+// topic requested. In the Direct approach, the discovery service will send 
+// whereabouts of each publisher; in the Broker approach, the whereabouts of 
+// the broker will be sent. Accordingly there will be request and response
+// message types
+message LookupPubByTopicReq
+{
+        repeated string topiclist = 1;
+}
+
+// Have a corresponding response to the lookupPubByTopic request
+// accordingly there will be a response to the above message
+message LookupPubByTopicResp
+{
+        repeated string publishers = 1; // list of publishers (with details)
+}
+
+// Request to get all of the pubs that are registered with discovery
+message LookupAllPubsReq
+{
+        // we really don't need to send any info
+}
+
+// Have a corresponding response to the lookupAllPubs request
+// accordingly there will be a response to the above message
+message LookupAllPubsResp
+{
+        repeated string publishers = 1; // list of publishers (with details)
+}
+
+// Finally, we are going to make a union of all these request/response messages
+// Define an enum of all message types supported on a discovery service.
+// This could be REGISTER_REQ, LOOKUP_PUB_BY_TOPIC, READY
+enum MsgTypes {
+        UNKNOWN = 0;
+        REGISTER = 1;
+        DEREGISTER = 2;
+        ISREADY = 3;
+        LOOKUP_PUB_BY_TOPIC = 4;
+        LOOKUP_ALL_PUBS = 5;
+        LOCATE_NEW_NODE = 6;
+        LOCATE_HASH_TABLE = 7;
+        LOCATE_PUB_BY_TOPIC_HASH = 8;
+        LOCATE_ALL_PUBS = 9;
+        UPDATE_NODE = 10;
+}
+
+// Discovery message (one of many)
+message DiscoveryReq
+{
+        MsgTypes msg_type = 1;
+        oneof Content {
+              RegisterReq register_req = 2;
+              DeregisterReq deregister_req = 3;
+              IsReadyReq is_ready = 4;
+              LookupPubByTopicReq topics = 5;
+              LookupAllPubsReq pubs_req = 6;
+              LocateReq locate_req = 7;
+              UpdateReq update_req = 8;
+        }
+}
+
+// Response to discovery req will be similar oneof of the responses.
+message DiscoveryResp
+{
+        MsgTypes msg_type = 1;
+        oneof Content {
+              RegisterResp register_resp = 2;
+              DeregisterResp deregister_resp = 3;
+              IsReadyResp is_ready = 4;
+              LookupPubByTopicResp resp = 5;
+              LookupAllPubsResp pubs_resp = 6;
+              LocateResp locate_resp = 7;
+        }
+}

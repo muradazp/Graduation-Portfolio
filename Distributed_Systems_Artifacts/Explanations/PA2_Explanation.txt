@@ -1,0 +1,11 @@
+Code covers all the required cases.
+- Milestone 1:  The system I have put together is capable of dynamically building a DHT ring of chord nodes. 
+                I have expanded on the assignment by building the system so new nodes can join the ring at 
+                any time. When new nodes join, the existing nodes will work together to update themselves 
+                with the new nodes info. 
+- Milestone 2:  The system also allows for the storing and querying of pubs/subs within the DHT ring. When 
+                new pubs/subs register with the ring, their topics are hashed and the new pub/sub is added 
+                to the proper node's hash table under the topic hash key. When subs query for pubs that 
+                match their topics, the ring nodes work together to get all of the necessary pubs and 
+                return them to the requesting sub.
+- Milestone 3:  I have tested the system thoroughly and it is working in all four configurations.

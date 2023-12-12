@@ -1,0 +1,18 @@
+Code covers all the required cases.
+- Milestone 1:  I have created functions to handle when a broker gets overloaded. I have defined "too much load" as: 
+                more than one publisher is connected. If a second publisher connects to a broker, then a backup broker 
+                is promoted to co-lead. The second publisher is then directed to that second broker and all subs are 
+                then directed to connect to that broker as well. When a co-lead broker dies/fails a broker from the 
+                backup pool is promoted to take its place. The pub and subs that were connected to the now dead broker 
+                then connect to the new co-lead broker. The optional task of demoting brokers back to the backup pool 
+                is not included in this solution.
+- Milestone 2:  When a new publisher joins it checks to see if any other publishers exist in zookeeper. For each 
+                publisher it finds, it compares its topiclist to that publisher. For each publisher that publishes on 
+                a topic that this one does too, it incriments its ownership strength. It only publishes on a topic if 
+                its ownership strength on that topic is '0'. Furthermore, whenever any publishers leave, the remaining 
+                publishers reevaluate their ownership strength on the topics they publish on (pubs keep a list of the 
+                pubs that existed before them for this to work).
+- Milestone 3:  Pubs and subs both have an argument for how much histoy to keep/require. Pubs keep this specified 
+                history of publications in a rolling window array. Subs join after pubs have started publishing. 
+                Subs are given the history that they missed for each of their topics in common. If a pub has a history 
+                less than a sub requires then the sub disconnects from that pub.

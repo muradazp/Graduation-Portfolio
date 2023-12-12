@@ -1,0 +1,9 @@
+Clearing at: 17:02:03
+Starting root: zookeeper, broker, discovery
+Starting /discovery: leader, pubs, subs
+Starting /discovery/pubs: pub2:10.0.0.8:5572, pub3:10.0.0.9:5573
+Starting /discovery/subs: sub2:10.0.0.11:5562, sub3:10.0.0.12:5563, sub1:10.0.0.10:5561
+Starting /broker: leaders, backups
+
+Cleared at: 17:02:03
+Cleared root: zookeeper

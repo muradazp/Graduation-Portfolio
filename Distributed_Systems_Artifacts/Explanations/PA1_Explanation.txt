@@ -1,0 +1,11 @@
+Code covers all the required cases.
+- Milestone 1:  Both publishers and subscribers are able to register with the Discovery service. 
+                The Discovery service replies with a “true” once the system is ready. Publishers 
+                are able to disseminate; subscribers are able to receive from every publisher who 
+                publishes topics they are interested in. The system is configurable to use either 
+                of the dissemination strategies system wide. Works with multiple publishers 
+                publishing multiple different publications and multiple subscribers, all of them 
+                distributed over different hosts. This can all be tested by using the 
+                'PA1.3/run_mininet_test.py' file.
+- Milestone 2:  TODO
+- Milestone 3:  TODO

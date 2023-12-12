@@ -1,0 +1,206 @@
+2023-04-13 17:01:31,412 - kazoo.client - INFO - Connecting to 10.0.0.1(10.0.0.1):2181, use_ssl: False
+2023-04-13 17:01:31,415 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2023-04-13 17:01:31,415 - SubAppln - INFO - Subscriber app configured.
+2023-04-13 17:01:31,415 - SubAppln - INFO - App: sub2 - 10.0.0.11:5562; Topiclist: ['airquality', 'humidity', 'location', 'temperature', 'light']
+2023-04-13 17:01:31,415 - SubAppln - INFO - Registering app with zookeeper and discovery.
+2023-04-13 17:01:31,419 - SubAppln - INFO - Registered with zookeeper.
+2023-04-13 17:01:31,420 - SubAppln - INFO - Connecting to the lead discovery service.
+2023-04-13 17:01:31,420 - SubAppln - INFO - Connected to: tcp://10.0.0.2:5551
+2023-04-13 17:01:31,521 - SubAppln - INFO - Subscriber app registered.
+2023-04-13 17:01:31,521 - SubAppln - INFO - Locating publishers for our topics.
+2023-04-13 17:01:31,521 - SubAppln - INFO - Subscribing to relevant publishers.
+2023-04-13 17:01:31,521 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.3:5581
+2023-04-13 17:01:31,521 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.4:5582
+2023-04-13 17:01:31,522 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.5:5583
+2023-04-13 17:01:31,522 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.6:5584
+2023-04-13 17:01:32,024 - SubAppln - INFO - Listening for new publishers.
+2023-04-13 17:01:32,024 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:32,024 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,024 - SubAppln - INFO - Message from publisher: humidity:61.21207470510006
+2023-04-13 17:01:32,024 - SubAppln - INFO - History received from publisher for topic: light
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:800
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:450
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:450
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:450
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:450
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:1600
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:450
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:800
+2023-04-13 17:01:32,024 - SubAppln - INFO - Historic message from publisher: light:450
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: light:450
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: light:1600
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: light:800
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: light:800
+2023-04-13 17:01:32,025 - SubAppln - INFO - History received from publisher for topic: airquality
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: airquality:good
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: airquality:smog
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: airquality:poor
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: airquality:smog
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: airquality:poor
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: airquality:smog
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: airquality:good
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: airquality:smog
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: airquality:poor
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: airquality:poor
+2023-04-13 17:01:32,025 - SubAppln - INFO - History received from publisher for topic: humidity
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: humidity:64.3140436826257
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: humidity:47.555589601231674
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: humidity:41.2066631735039
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: humidity:39.71048414662177
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: humidity:66.72691948275072
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: humidity:23.058148751599532
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: humidity:36.64169310068225
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: humidity:43.66589233714322
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: humidity:46.00294042470042
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: humidity:61.21207470510006
+2023-04-13 17:01:32,025 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:32,025 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,025 - SubAppln - INFO - Message from publisher: temperature:32
+2023-04-13 17:01:32,025 - SubAppln - INFO - History received from publisher for topic: temperature
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: temperature:-63
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: temperature:61
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: temperature:-54
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: temperature:30
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: temperature:37
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: temperature:59
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: temperature:86
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: temperature:-96
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: temperature:48
+2023-04-13 17:01:32,025 - SubAppln - INFO - Historic message from publisher: temperature:32
+2023-04-13 17:01:32,025 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:32,025 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,025 - SubAppln - INFO - Message from publisher: location:Australia
+2023-04-13 17:01:32,026 - SubAppln - INFO - History received from publisher for topic: location
+2023-04-13 17:01:32,026 - SubAppln - INFO - Historic message from publisher: location:Africa
+2023-04-13 17:01:32,026 - SubAppln - INFO - Historic message from publisher: location:Asia
+2023-04-13 17:01:32,026 - SubAppln - INFO - Historic message from publisher: location:Asia
+2023-04-13 17:01:32,026 - SubAppln - INFO - Historic message from publisher: location:Africa
+2023-04-13 17:01:32,026 - SubAppln - INFO - Historic message from publisher: location:Africa
+2023-04-13 17:01:32,026 - SubAppln - INFO - Historic message from publisher: location:America
+2023-04-13 17:01:32,026 - SubAppln - INFO - Historic message from publisher: location:Asia
+2023-04-13 17:01:32,026 - SubAppln - INFO - Historic message from publisher: location:America
+2023-04-13 17:01:32,026 - SubAppln - INFO - Historic message from publisher: location:Australia
+2023-04-13 17:01:32,026 - SubAppln - INFO - Historic message from publisher: location:Australia
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: humidity:62.80130682850971
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: airquality:good
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: temperature:-40
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: location:Australia
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: humidity:80.75559390044543
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: temperature:34
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: location:Europe
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: humidity:90.75577320679284
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: airquality:good
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: temperature:-68
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: location:Australia
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: airquality:good
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: humidity:11.436865190445022
+2023-04-13 17:01:32,026 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,027 - SubAppln - INFO - Message from publisher: temperature:9
+2023-04-13 17:01:32,027 - SubAppln - INFO - Message from publisher: location:Asia
+2023-04-13 17:01:32,027 - SubAppln - INFO - Message from publisher: humidity:81.0601941766247
+2023-04-13 17:01:32,027 - SubAppln - INFO - Message from publisher: temperature:75
+2023-04-13 17:01:32,027 - SubAppln - INFO - Message from publisher: location:Asia
+2023-04-13 17:01:32,039 - SubAppln - INFO - Message from publisher: humidity:15.546899592990462
+2023-04-13 17:01:32,058 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:32,065 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,069 - SubAppln - INFO - Message from publisher: temperature:86
+2023-04-13 17:01:32,079 - SubAppln - INFO - Message from publisher: location:Africa
+2023-04-13 17:01:32,105 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,120 - SubAppln - INFO - Message from publisher: humidity:63.50006755819807
+2023-04-13 17:01:32,129 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:32,146 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,150 - SubAppln - INFO - Message from publisher: temperature:25
+2023-04-13 17:01:32,160 - SubAppln - INFO - Message from publisher: location:Africa
+2023-04-13 17:01:32,187 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,200 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:32,201 - SubAppln - INFO - Message from publisher: humidity:25.670562733932382
+2023-04-13 17:01:32,227 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,231 - SubAppln - INFO - Message from publisher: temperature:37
+2023-04-13 17:01:32,241 - SubAppln - INFO - Message from publisher: location:America
+2023-04-13 17:01:32,268 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,270 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:32,282 - SubAppln - INFO - Message from publisher: humidity:28.1542775842483
+2023-04-13 17:01:32,308 - SubAppln - INFO - Message from publisher: airquality:good
+2023-04-13 17:01:32,312 - SubAppln - INFO - Message from publisher: temperature:-7
+2023-04-13 17:01:32,322 - SubAppln - INFO - Message from publisher: location:Africa
+2023-04-13 17:01:32,341 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:32,349 - SubAppln - INFO - Message from publisher: airquality:good
+2023-04-13 17:01:32,363 - SubAppln - INFO - Message from publisher: humidity:78.28316505666523
+2023-04-13 17:01:32,390 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,393 - SubAppln - INFO - Message from publisher: temperature:-43
+2023-04-13 17:01:32,403 - SubAppln - INFO - Message from publisher: location:Australia
+2023-04-13 17:01:32,412 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:32,431 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,443 - SubAppln - INFO - Message from publisher: humidity:87.10257654525236
+2023-04-13 17:01:32,471 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,474 - SubAppln - INFO - Message from publisher: temperature:-27
+2023-04-13 17:01:32,482 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:32,484 - SubAppln - INFO - Message from publisher: location:Australia
+2023-04-13 17:01:32,512 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,524 - SubAppln - INFO - Message from publisher: humidity:11.795026412830811
+2023-04-13 17:01:32,552 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,553 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:32,555 - SubAppln - INFO - Message from publisher: temperature:22
+2023-04-13 17:01:32,565 - SubAppln - INFO - Message from publisher: location:Asia
+2023-04-13 17:01:32,593 - SubAppln - INFO - Message from publisher: airquality:good
+2023-04-13 17:01:32,605 - SubAppln - INFO - Message from publisher: humidity:74.42939642834924
+2023-04-13 17:01:32,623 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:32,633 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,636 - SubAppln - INFO - Message from publisher: temperature:25
+2023-04-13 17:01:32,646 - SubAppln - INFO - Message from publisher: location:Africa
+2023-04-13 17:01:32,674 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,686 - SubAppln - INFO - Message from publisher: humidity:11.581200295121585
+2023-04-13 17:01:32,694 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:32,714 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,716 - SubAppln - INFO - Message from publisher: temperature:-45
+2023-04-13 17:01:32,727 - SubAppln - INFO - Message from publisher: location:Africa
+2023-04-13 17:01:32,755 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,765 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:32,767 - SubAppln - INFO - Message from publisher: humidity:29.436535827459462
+2023-04-13 17:01:32,795 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,797 - SubAppln - INFO - Message from publisher: temperature:-66
+2023-04-13 17:01:32,807 - SubAppln - INFO - Message from publisher: location:Asia
+2023-04-13 17:01:32,835 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:32,836 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,848 - SubAppln - INFO - Message from publisher: humidity:44.390572644409374
+2023-04-13 17:01:32,876 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:32,878 - SubAppln - INFO - Message from publisher: temperature:-23
+2023-04-13 17:01:32,888 - SubAppln - INFO - Message from publisher: location:America
+2023-04-13 17:01:32,906 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:32,917 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:32,928 - SubAppln - INFO - Message from publisher: humidity:86.75545685617266
+2023-04-13 17:01:32,958 - SubAppln - INFO - Message from publisher: airquality:good
+2023-04-13 17:01:32,959 - SubAppln - INFO - Message from publisher: temperature:-49
+2023-04-13 17:01:32,969 - SubAppln - INFO - Message from publisher: location:Europe
+2023-04-13 17:01:32,977 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:32,998 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:33,009 - SubAppln - INFO - Message from publisher: humidity:74.94707452556908
+2023-04-13 17:01:33,038 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:33,040 - SubAppln - INFO - Message from publisher: temperature:62
+2023-04-13 17:01:33,047 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:33,050 - SubAppln - INFO - Message from publisher: location:Asia
+2023-04-13 17:01:33,079 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:33,090 - SubAppln - INFO - Message from publisher: humidity:97.02558663984705
+2023-04-13 17:01:33,118 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:33,119 - SubAppln - INFO - Message from publisher: airquality:smog
+2023-04-13 17:01:33,120 - SubAppln - INFO - Message from publisher: temperature:-71
+2023-04-13 17:01:33,130 - SubAppln - INFO - Message from publisher: location:America
+2023-04-13 17:01:33,160 - SubAppln - INFO - Message from publisher: airquality:poor
+2023-04-13 17:01:33,171 - SubAppln - INFO - Message from publisher: humidity:46.53493902159996

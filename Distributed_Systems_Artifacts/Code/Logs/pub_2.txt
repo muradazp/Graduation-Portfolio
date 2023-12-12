@@ -1,0 +1,11 @@
+2023-04-13 17:01:28,413 - kazoo.client - INFO - Connecting to 10.0.0.1(10.0.0.1):2181, use_ssl: False
+2023-04-13 17:01:28,417 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2023-04-13 17:01:28,417 - PubAppln - INFO - Publisher app configured.
+2023-04-13 17:01:28,417 - PubAppln - INFO - App: pub2 - 10.0.0.8:5572; Topiclist: ['sound', 'pressure', 'humidity', 'altitude', 'airquality', 'temperature', 'location', 'weather']
+2023-04-13 17:01:28,417 - PubAppln - INFO - Registering app with zookeeper and discovery.
+2023-04-13 17:01:28,422 - PubAppln - INFO - Registered with zookeeper.
+2023-04-13 17:01:28,423 - PubAppln - INFO - Connecting to the lead discovery service.
+2023-04-13 17:01:28,424 - PubAppln - INFO - Connected to: tcp://10.0.0.2:5551
+2023-04-13 17:01:28,525 - PubAppln - INFO - Publisher app registered.
+2023-04-13 17:01:28,525 - PubAppln - INFO - Disseminating info on our topics.
+2023-04-13 17:01:43,310 - PubAppln - INFO - Publisher left. Re-evaluating ownership strength.

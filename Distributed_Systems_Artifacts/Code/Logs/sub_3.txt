@@ -1,0 +1,227 @@
+2023-04-13 17:01:32,428 - kazoo.client - INFO - Connecting to 10.0.0.1(10.0.0.1):2181, use_ssl: False
+2023-04-13 17:01:32,432 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2023-04-13 17:01:32,432 - SubAppln - INFO - Subscriber app configured.
+2023-04-13 17:01:32,432 - SubAppln - INFO - App: sub3 - 10.0.0.12:5563; Topiclist: ['temperature', 'light', 'pressure', 'sound', 'location', 'weather', 'humidity']
+2023-04-13 17:01:32,432 - SubAppln - INFO - Registering app with zookeeper and discovery.
+2023-04-13 17:01:32,436 - SubAppln - INFO - Registered with zookeeper.
+2023-04-13 17:01:32,437 - SubAppln - INFO - Connecting to the lead discovery service.
+2023-04-13 17:01:32,437 - SubAppln - INFO - Connected to: tcp://10.0.0.2:5551
+2023-04-13 17:01:32,538 - SubAppln - INFO - Subscriber app registered.
+2023-04-13 17:01:32,538 - SubAppln - INFO - Locating publishers for our topics.
+2023-04-13 17:01:32,538 - SubAppln - INFO - Subscribing to relevant publishers.
+2023-04-13 17:01:32,538 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.3:5581
+2023-04-13 17:01:32,538 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.4:5582
+2023-04-13 17:01:32,538 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.5:5583
+2023-04-13 17:01:32,538 - SubAppln - INFO - Subscribed to publisher: tcp://10.0.0.6:5584
+2023-04-13 17:01:33,041 - SubAppln - INFO - Listening for new publishers.
+2023-04-13 17:01:33,041 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:33,041 - SubAppln - INFO - Message from publisher: weather:sunny
+2023-04-13 17:01:33,041 - SubAppln - INFO - Message from publisher: temperature:22
+2023-04-13 17:01:33,041 - SubAppln - INFO - History received from publisher for topic: light
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:1600
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:800
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:800
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:800
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:450
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:800
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:450
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:800
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:1600
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:450
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:450
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:1100
+2023-04-13 17:01:33,041 - SubAppln - INFO - Historic message from publisher: light:1600
+2023-04-13 17:01:33,041 - SubAppln - INFO - Publisher doesnt meet minimum history. Unsubscribing.
+2023-04-13 17:01:33,041 - SubAppln - INFO - Unsubscribed from publisher: 10.0.0.4:5582
+2023-04-13 17:01:33,041 - SubAppln - INFO - Publisher doesnt meet minimum history. Unsubscribing.
+2023-04-13 17:01:33,041 - SubAppln - INFO - Unsubscribed from publisher: 10.0.0.5:5583
+2023-04-13 17:01:33,041 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:33,041 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:33,041 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:33,042 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:33,042 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:33,042 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:33,047 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:33,118 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:33,189 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:33,259 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:33,330 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:33,401 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:33,471 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:33,542 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:33,613 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:33,683 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:33,754 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:33,825 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:33,895 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:33,966 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:34,036 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:34,107 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:34,178 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:34,248 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:34,319 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:34,390 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:34,460 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:34,531 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:34,601 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:34,672 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:34,743 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:34,813 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:34,884 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:34,955 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:35,025 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:35,096 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:35,166 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:35,237 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:35,308 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:35,378 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:35,449 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:35,520 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:35,590 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:35,661 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:35,731 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:35,802 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:35,873 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:35,943 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:36,014 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:36,084 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:36,155 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:36,226 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:36,296 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:36,367 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:36,437 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:36,508 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:36,579 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:36,649 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:36,720 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:36,790 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:36,861 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:36,931 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:37,002 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:37,073 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:37,143 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:37,214 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:37,285 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:37,355 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:37,426 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:37,497 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:37,567 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:37,638 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:37,709 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:37,779 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:37,850 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:37,920 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:37,991 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:38,061 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:38,132 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:38,203 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:38,274 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:38,344 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:38,415 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:38,485 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:38,556 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:38,627 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:38,697 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:38,768 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:38,838 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:38,909 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:38,979 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:39,050 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:39,121 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:39,191 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:39,262 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:39,332 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:39,403 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:39,474 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:39,544 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:39,615 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:39,686 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:39,756 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:39,827 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:39,897 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:39,968 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:40,038 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:40,109 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:40,180 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:40,250 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:40,321 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:40,392 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:40,462 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:40,533 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:40,604 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:40,674 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:40,745 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:40,816 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:40,886 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:40,957 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:41,027 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:41,098 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:41,169 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:41,239 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:41,310 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:41,381 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:41,451 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:41,522 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:41,592 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:41,663 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:41,733 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:41,804 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:41,875 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:41,945 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:42,016 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:42,086 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:42,157 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:42,228 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:42,298 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:42,369 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:42,440 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:42,510 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:42,581 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:42,652 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:42,722 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:42,793 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:42,863 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:42,935 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:43,005 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:43,076 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:43,146 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:43,217 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:43,288 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:43,359 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:43,429 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:43,500 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:43,570 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:43,641 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:43,712 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:43,782 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:43,853 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:43,924 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:43,994 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:44,065 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:44,135 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:44,206 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:44,277 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:44,348 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:44,418 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:44,489 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:44,559 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:44,630 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:44,701 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:44,771 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:44,842 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:44,913 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:44,983 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:45,054 - SubAppln - INFO - Message from publisher: light:1600
+2023-04-13 17:01:45,125 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:45,195 - SubAppln - INFO - Message from publisher: light:450
+2023-04-13 17:01:45,266 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:45,337 - SubAppln - INFO - Message from publisher: light:1100
+2023-04-13 17:01:45,407 - SubAppln - INFO - Message from publisher: light:800
+2023-04-13 17:01:45,478 - SubAppln - INFO - Message from publisher: light:1100

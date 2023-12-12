@@ -1,0 +1,30 @@
+2023-04-13 17:01:07,397 - kazoo.client - INFO - Connecting to 10.0.0.1(10.0.0.1):2181, use_ssl: False
+2023-04-13 17:01:07,409 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2023-04-13 17:01:07,419 - DiscAppln - INFO - Discovery app configured.
+2023-04-13 17:01:07,419 - DiscAppln - INFO - Listening for registration requests...
+2023-04-13 17:01:07,421 - DiscAppln - INFO - A lead broker node has failed.
+2023-04-13 17:01:07,425 - DiscAppln - INFO - No publishers present.
+2023-04-13 17:01:07,429 - DiscAppln - INFO - No Subscribers present.
+2023-04-13 17:01:08,496 - DiscAppln - INFO - New registration request from: broker1 - 10.0.0.3:5581
+2023-04-13 17:01:08,496 - DiscAppln - INFO - Registration request handled successfully.
+2023-04-13 17:01:22,541 - DiscAppln - INFO - New registration request from: pub1 - 10.0.0.7:5571
+2023-04-13 17:01:22,541 - DiscAppln - INFO - Registration request handled successfully.
+2023-04-13 17:01:22,744 - DiscAppln - INFO - A lead broker node has failed.
+2023-04-13 17:01:23,057 - DiscAppln - INFO - New registration request from: broker2 - 10.0.0.4:5582
+2023-04-13 17:01:23,057 - DiscAppln - INFO - Registration request handled successfully.
+2023-04-13 17:01:28,524 - DiscAppln - INFO - New registration request from: pub2 - 10.0.0.8:5572
+2023-04-13 17:01:28,524 - DiscAppln - INFO - Registration request handled successfully.
+2023-04-13 17:01:28,814 - DiscAppln - INFO - New registration request from: broker3 - 10.0.0.5:5583
+2023-04-13 17:01:28,814 - DiscAppln - INFO - Registration request handled successfully.
+2023-04-13 17:01:29,527 - DiscAppln - INFO - New registration request from: pub3 - 10.0.0.9:5573
+2023-04-13 17:01:29,527 - DiscAppln - INFO - Registration request handled successfully.
+2023-04-13 17:01:30,393 - DiscAppln - INFO - New registration request from: broker4 - 10.0.0.6:5584
+2023-04-13 17:01:30,393 - DiscAppln - INFO - Registration request handled successfully.
+2023-04-13 17:01:30,516 - DiscAppln - INFO - New registration request from: sub1 - 10.0.0.10:5561
+2023-04-13 17:01:30,517 - DiscAppln - INFO - Registration request handled successfully.
+2023-04-13 17:01:31,520 - DiscAppln - INFO - New registration request from: sub2 - 10.0.0.11:5562
+2023-04-13 17:01:31,521 - DiscAppln - INFO - Registration request handled successfully.
+2023-04-13 17:01:32,537 - DiscAppln - INFO - New registration request from: sub3 - 10.0.0.12:5563
+2023-04-13 17:01:32,537 - DiscAppln - INFO - Registration request handled successfully.
+2023-04-13 17:01:43,311 - DiscAppln - INFO - New deregistration request from: pub1 - 10.0.0.7:5571
+2023-04-13 17:01:43,311 - DiscAppln - INFO - Deregistration request handled successfully.
