@@ -1,0 +1,46 @@
+# Specify the base docker image to build from 
+ARG PYTORCH="1.10.0"
+ARG CUDA="11.3"
+ARG CUDNN="8"
+FROM pytorch/pytorch:${PYTORCH}-cuda${CUDA}-cudnn${CUDNN}-devel
+
+# Setting noninteractive build, setting up tzdata and configuring timezones
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Europe/Berlin
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# Install all necessary python packages with pip
+RUN pip install -U pip
+RUN pip install albumentations==1.0.0 timm==0.4.12 facenet-pytorch boto3
+
+# Install all necessary system packages with apt-get
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+RUN apt-get update -y
+RUN apt-get install -y libgtk-3-dev nano mc dos2unix
+
+# Install AWS CLI
+RUN apt install curl
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+RUN unzip awscliv2.zip
+
+# Download pretraned Imagenet models
+RUN apt install wget
+RUN wget https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_efficientnet_b7_ns-1dbc32de.pth -P /root/.cache/torch/hub/checkpoints/
+
+# Clean up apt
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Setting the working directory
+WORKDIR /workspace
+
+# Copying the required codebase
+COPY . /workspace
+
+# Convert start file to unix
+RUN dos2unix start.sh
+
+# Setting the python path env var
+ENV PYTHONPATH=.
+
+# Run the start.sh file on container startup
+CMD "./start.sh"
